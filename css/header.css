@@ -1,0 +1,47 @@
+.cabecalho {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+}
+
+.Favicon {
+  margin-left: 40px;
+  color: #1e2fae;
+  font-size: 3rem;
+}
+
+.navegacao {
+  margin-right: 10px;
+}
+
+.nav1 {
+  list-style: none;
+  gap: 20px;
+  display: flex;
+  justify-content: end;
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #1e2fae;
+}
+
+@media (max-width: 650px) {
+  .nav1 {
+    display: none;
+  }
+
+  .Favicon::after {
+    content: "MENU";
+    font-size: 1.5rem;
+    margin-left: 12rem;
+    background-color: lightblue;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+  }
+}
+
+li {
+  padding: 10px;
+}

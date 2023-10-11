@@ -1,0 +1,42 @@
+.contatos {
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: linear-gradient(#cad1ff, #000000);
+}
+
+
+
+.contatos h1 {
+  justify-self: start;
+  align-self: start;
+  font-size: 5rem;
+  margin-left: 2rem;
+}
+
+.contatos p {
+  font-size: 2rem;
+  align-self: center;
+  justify-self: end;
+  margin-right: 2rem;
+  font-weight: bold;
+}
+
+@media (max-width: 1100px) {
+  .contatos {
+    grid-template-columns: 1fr;
+  
+  }
+
+  .contatos h1 {
+    justify-self: start;
+    font-size: 2rem;
+ 
+  }
+
+  .contatos p {
+    justify-self: start;
+    font-size: 1rem;
+    margin-left: 2rem;
+  }
+}
